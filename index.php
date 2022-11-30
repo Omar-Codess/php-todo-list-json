@@ -25,6 +25,12 @@
                     </ul>
                 </div>
             </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-7">
+                    <input type="text" class="form-control" placeholder="Inserisci un nuovo todo">
+                    <button class="btn btn-primary mt-2">Aggiungi</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
