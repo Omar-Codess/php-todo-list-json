@@ -15,20 +15,21 @@
 </head>
 
 <body>
-    <div id="id">
+    <div id="app">
         <div class="container pt-5">
             <h1 class="text-center">Todo List</h1>
             <div class="row justify-content-center">
                 <div class="col-7">
-                    <ul>
-                        <li></li>
+                    <ul class="list-group">
+                        <li class="list-group-item" v-for="todo in todoList">{{ todo.text }}</li>
+
                     </ul>
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <div class="col-7">
-                    <input type="text" class="form-control" placeholder="Inserisci un nuovo todo">
-                    <button class="btn btn-primary mt-2">Aggiungi</button>
+                    <input type="text" class="form-control" aria-label="Inserisci un nuovo todo" placeholder="Inserisci un nuovo todo" v-model="newTodo">
+                    <button class="btn btn-primary mt-2" @click="addTodo">Aggiungi</button>
                 </div>
             </div>
         </div>
