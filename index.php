@@ -15,7 +15,18 @@
 </head>
 
 <body>
-
+    <div id="id">
+        <div class="container pt-5">
+            <h1 class="text-center">Todo List</h1>
+            <div class="row justify-content-center">
+                <div class="col-7">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
